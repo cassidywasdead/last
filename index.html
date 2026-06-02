@@ -11,11 +11,20 @@
 
     <br><br>
 
-    <!-- Email Notification Form -->
-    <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
-        <input type="hidden" name="_subject" value="Breakup Confirmed">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://github.com">
+    <!-- Web3Forms Integration -->
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <!-- Web3Forms Access Key -->
+        <input type="hidden" name="access_key" value="3ef52260-7040-4755-8957-b8d3bed088fd">
+        
+        <!-- Subject of the email notification -->
+        <input type="hidden" name="subject" value="Breakup Confirmed">
+        
+        <!-- Spam Protection -->
+        <input type="checkbox" name="botcheck" style="display: none;">
+
+        <!-- Redirect after clicking (Sends user to GitHub home page) -->
+        <input type="hidden" name="redirect" value="https://github.com">
+        
         <button type="submit" style="padding: 10px 20px; font-size: 16px; cursor: pointer; border: 1px solid black; background: white;">Breakup Confirm</button>
     </form>
 
